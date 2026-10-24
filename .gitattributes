@@ -1,2 +1,47 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <h2>Payment Form</h2>
+    <h3>Contact Information</h3>
+    <form action="">
+    <p>  First Name * : <input type="text" name="name"  required></p>
+    <p>Second Name: <input type="text" name="name"> </p>
+    <p>Father's Name * : <input type="text" name="name" required></p>
+    <p>Date of Birth * : <input type="date"required></p>
+    <p>Personal contact *: <input type="number" required></p>
+    <p>NIC Number: * <input type="text" name="CNIC" placeholder="12345-1234567-9" required></p>
+    <p>Father's contct: <input type="number" required></p>
+    <p>Father's NIC Number *: <input type="texr" placeholder="12345-1234567-9" required></p>
+    <p>Address Information *: <textarea name="address" id="address" cols="100" rows="8" required></textarea></p>
+      <fieldset>
+        <legend>gender *</legend>
+      <p>Male <input type="radio" name="gender" id="male" required>
+        Female <input type="radio" name="gender" id="Female" required>
+
+    </p>
+    </fieldset>
+    <p>Email *:<input type="email" name="email" id="email" required></p>
+    <hr>
+    <h3>Payment Information:</h3>
+    <p>Card type *:
+        <select name="card_type" id="card_type" required>
+            <option value="">--Select a Card Type--</option>
+            <option value="Vise">Visa</option>
+            <option value="HBL Card">HBL</option>
+            <option value="UBL Card">UBL</option>
+        </select>
+    </p>
+    <p>Card Number *: <input type="number" required></p>
+    <p>Card Expiration Date *: <input type="date" required></p>
+    <p>CVV * <input type="password"  name="CVV" id="CVV" required></p>
+    <input type="submit" value="Pay Now">
+    </form>
+    <link rel="stylesheet" href="style.css">
+    
+</body>
+</html>
